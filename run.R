@@ -19,6 +19,7 @@ kdict_trans <- gs_title("kdict-transcriptions")
 # Create new worksheet if not already present
 if(!BATCH_NO %in% gs_ws_ls(kdict_trans)) {
     gs_ws_new(kdict_trans, ws_title = BATCH_NO)
+    kdict_trans <- gs_title("kdict-transcriptions")
 }
 
 # List all TextGrids
