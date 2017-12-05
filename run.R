@@ -46,5 +46,6 @@ gs_edit_cells(
     ws        = BATCH_NO,
     input     = .,
     anchor    = "A1",
-    col_names = TRUE
+    col_names = TRUE,
+    trim      = TRUE
 )
