@@ -22,10 +22,11 @@ if(!BATCH_NO %in% gs_ws_ls(kdict_trans)) {
     kdict_trans <- gs_title("kdict-transcriptions")
 }
 
-# List all TextGrids
+# List all TextGrids files ending with a letter,
+# e.g. b007_99_kr.TextGrid, but not b007_99.TextGrid (the skeleton template)
 list.files(
     path    = ".",
-    pattern = ".TextGrid$",
+    pattern = "[a-z|A-Z]+.TextGrid$",
     recursive = TRUE
 ) %>%
 
